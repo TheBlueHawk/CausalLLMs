@@ -1,0 +1,12 @@
+{
+ "data": [
+  {
+   "sentence": "What is the 2nd root of 343?",
+   "perplexity": 135.41818237304688
+  },
+  {
+   "sentence": "What is the square root of 343?",
+   "perplexity": 54.317569732666016
+  }
+ ]
+}
