@@ -1,21 +1,11 @@
 # Code inspired from public example on HuggingFace:
 # https://huggingface.co/spaces/evaluate-measurement/perplexity
 
-from ast import arg
-from datetime import datetime
-from time import time
-import evaluate
-from lightning_fabric import Fabric
-from tqdm import tqdm
-from datasets import load_dataset
 import argparse
-import csv
-import dataclasses
-from typing import Optional, Type
-import datasets
-import torch
-from zmq import device
+import evaluate
 import json
+from datetime import datetime
+from typing import Optional, Type
 
 
 def text_to_perplexity(input_texts: list[str], model_id="gpt2") -> list[float]:

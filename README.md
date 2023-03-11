@@ -1,12 +1,12 @@
 # CausalLLMs
-Collection of experiments and utilities for testing causal reasoning in LLMs. 
+Collection of experiments and utilities for testing causal reasoning in LLMs.
 
 
 
 ## Perplexity calculator
 Utility to quickly compute the perplexity score of a given sentence or list of sentences. Mean perplexity is printed in the terminal and all results are saved in a json file as a collection of `{sentence: "text", perplexity: score}`
 
-### Usage 
+### Usage
 If there is only one sentence, it can be directly passed as an argument with `-t` or `--text`:
 ```bash
 python perplexity_calculator.py -t "This is my sentence"
