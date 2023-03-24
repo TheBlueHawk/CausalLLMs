@@ -5,7 +5,6 @@ import argparse
 import evaluate
 import json
 from datetime import datetime
-from typing import Optional, Type
 
 
 def text_to_perplexity(input_texts: list[str], model_id="gpt2") -> list[float]:
