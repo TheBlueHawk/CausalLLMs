@@ -1,3 +1,6 @@
 argparse
 evaluate
 json
+jsonlines
+tqdm
+lm-dataformat
