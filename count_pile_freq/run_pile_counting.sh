@@ -7,6 +7,7 @@ set -e
 
 data_dir=script_data
 output_dir=script_output
+full_sentences="${1:-True}"
 
 for idx in $(seq -w 00 29); do
   filename_zip="${idx}.jsonl.zst"
@@ -28,7 +29,7 @@ for idx in $(seq -w 00 29); do
   popd
 
   data_path=$data_dir/$filename
-  python count_partial_pile.py ${data_path} --output_dir $output_dir
+  python count_partial_pile.py ${data_path} --output_dir $output_dir --full_sentences $full_sentences
 done
 
 python merge_json_counts.py script_output/* > merged_counts.json

@@ -26,8 +26,11 @@ def get_words_set():
 
 
 def get_lines_set():
+    lines = set()
     with open("input.txt", "r") as file:
-        lines = set(file.read().splitlines())
+        for line in file:
+            line = line.strip().lower()
+            lines.add(line)
     return lines
 
 
@@ -46,33 +49,42 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("input_file", type=pathlib.Path)
     parser.add_argument("--output_dir", type=pathlib.Path)
+    parser.add_argument("--full_senteces", type=bool)
     args = parser.parse_args()
 
     reader = lmd.Reader(str(args.input_file))
     length = get_length(reader)
 
     cnt = Counter()
-    for text in tqdm.tqdm(catch_json_error(reader.stream_data()), total=length):
-        for word in text.split():
-            word: str
-            if len(word) <= 1:
-                continue
-            if not word[0].isupper():
-                continue
-            if not word.isascii():
-                continue
-            if word.lower() not in WORDS_SET:
-                continue
+    if args.full_senteces:
+        for text in tqdm.tqdm(catch_json_error(reader.stream_data()), total=length):
+            text = text.lower()
+            for sentence in LINES_SET:
+                count = (text).count(sentence)
+                cnt[sentence] += count
 
-            chars = set(word)
-            banned_chars = set("<>")
-            if len(chars.intersection(banned_chars)) > 0:
-                continue
+    else:
+        for text in tqdm.tqdm(catch_json_error(reader.stream_data()), total=length):
+            for word in text.split():
+                word: str
+                if len(word) <= 1:
+                    continue
+                if not word[0].isupper():
+                    continue
+                if not word.isascii():
+                    continue
+                if word.lower() not in WORDS_SET:
+                    continue
 
-            drop_suffixes = ".,!?"
-            if word[-1] in drop_suffixes:
-                word = word[:-1]
-            cnt[word.lower()] += 1
+                chars = set(word)
+                banned_chars = set("<>")
+                if len(chars.intersection(banned_chars)) > 0:
+                    continue
+
+                drop_suffixes = ".,!?"
+                if word[-1] in drop_suffixes:
+                    word = word[:-1]
+                cnt[word.lower()] += 1
 
     if args.output_dir is not None:
         args.output_dir.mkdir(parents=True, exist_ok=True)
