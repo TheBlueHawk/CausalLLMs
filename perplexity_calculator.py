@@ -2,9 +2,10 @@
 # https://huggingface.co/spaces/evaluate-measurement/perplexity
 
 import argparse
-import evaluate
 import json
 from datetime import datetime
+
+import evaluate
 
 
 def text_to_perplexity(input_texts: list[str], model_id="gpt2") -> list[float]:

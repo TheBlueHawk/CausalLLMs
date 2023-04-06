@@ -3,15 +3,16 @@ Outputs first name frequencies from partial Pile data.
 
 A better name for this file would be count_partial_pile.py
 """
-from collections import Counter
-import sys
-import pandas
-import pathlib
 import argparse
-import jsonlines
 import json
-import tqdm
+import pathlib
+import sys
+from collections import Counter
+
+import jsonlines
 import lm_dataformat as lmd
+import pandas
+import tqdm
 
 
 def get_length(reader):

@@ -1,8 +1,7 @@
-from collections import Counter
-import json
-
 import argparse
+import json
 import pathlib
+from collections import Counter
 
 
 def _load_json(path: pathlib.Path) -> dict:
