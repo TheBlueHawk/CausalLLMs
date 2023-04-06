@@ -11,6 +11,8 @@ import jsonlines
 import lm_dataformat as lmd
 import tqdm
 
+QUERIES = "data/pile_query.txt"
+
 
 def get_length(reader):
     count = 0
@@ -20,14 +22,14 @@ def get_length(reader):
 
 
 def get_words_set():
-    with open("input.txt", "r") as file:
+    with open(QUERIES, "r") as file:
         words = set(file.read().split())
     return words
 
 
 def get_lines_set():
     lines = set()
-    with open("input.txt", "r") as file:
+    with open(QUERIES, "r") as file:
         for line in file:
             line = line.strip().lower()
             lines.add(line)
@@ -49,14 +51,14 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("input_file", type=pathlib.Path)
     parser.add_argument("--output_dir", type=pathlib.Path)
-    parser.add_argument("--full_senteces", type=bool)
+    parser.add_argument("--full_sentences", type=bool)
     args = parser.parse_args()
 
     reader = lmd.Reader(str(args.input_file))
     length = get_length(reader)
 
     cnt = Counter()
-    if args.full_senteces:
+    if args.full_sentences:
         for text in tqdm.tqdm(catch_json_error(reader.stream_data()), total=length):
             text = text.lower()
             for sentence in LINES_SET:

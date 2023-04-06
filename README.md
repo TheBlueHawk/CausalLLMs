@@ -39,3 +39,15 @@ python perplexity_calculator.py -t "What is the 2nd root of 343?"
 python perplexity_calculator.py -t "lorem ipsum Wanna Bonjour cane?"
 >> Mean perplexity: 438.12
 ```
+
+## Pile Word Frequency Counting
+Utility to count the occurences of a given list of strings in the Pile corpus.
+This is a streaming script, so doesn't store the entire Pile corpus, nevertheless you will need at least 20GB of disk space.
+
+### Usage
+Save the sentences you want to look for in the file `input.txt` in the `data` directory and then run the following shell script:
+```
+./run_pile_counting.sh
+```
+
+This script calls `count_partial.py` on multiple JSON, outputting to `script_output/` and then merges the outputs in a single file by calling `merge_json_counts.py`
