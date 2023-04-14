@@ -10,10 +10,10 @@ output_dir=out/pile_counts
 full_sentences="${1:-true}"
 
 for idx in $(seq -w 00 01); do
-  #filename_zip="${idx}.jsonl.zst"
-  filename_zip="test.jsonl.zst"
-  #url="the-eye.eu/public/AI/pile/train/${filename_zip}"
-  url="the-eye.eu/public/AI/pile/test.jsonl.zst"
+  filename_zip="${idx}.jsonl.zst"
+  url="the-eye.eu/public/AI/pile/train/${filename_zip}"
+  #filename_zip="test.jsonl.zst"
+  #url="the-eye.eu/public/AI/pile/test.jsonl.zst"
   filename="${idx}.jsonl"
 
   # Remove old data.
