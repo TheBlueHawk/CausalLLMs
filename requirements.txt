@@ -5,3 +5,7 @@ json
 jsonlines
 tqdm
 lm-dataformat
+torch
+parlai
+numpy
+scipy
