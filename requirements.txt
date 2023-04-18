@@ -6,6 +6,13 @@ jsonlines
 tqdm
 lm-dataformat
 torch
+
+# Roscoe related
 parlai
 numpy
 scipy
+transformers
+sentence-transformers
+xmltodict
+nltk
+spacy

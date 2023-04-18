@@ -2,8 +2,8 @@
 # Usage:
 # sh roscoe_data/generate_perturbed_data.sh
 
-PATH_TO_DATA="./projects/roscoe/roscoe_data/"
-RESTORE_SCRIPT="./projects/roscoe/roscoe_data/restore_data.py"
+PATH_TO_DATA="roscoe_data/"
+RESTORE_SCRIPT="roscoe_data/restore_data.py"
 
 mkdir -p ${PATH_TO_DATA}/synthetic
 mkdir -p ${PATH_TO_DATA}/synthetic_sentinel
