@@ -12,11 +12,7 @@ python projects/roscoe/roscoe.py
 """
 import json
 import os
-import sys
 from typing import List
-
-sys.path.append("/Users/kevinblin/Code/ParlAI")
-print(sys.path)
 
 from nltk.tokenize import sent_tokenize
 from parlai.core.params import ParlaiParser
