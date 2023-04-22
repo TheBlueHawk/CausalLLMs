@@ -31,10 +31,11 @@ def save_scores(score_dict: Dict, out_path: str) -> None:
 
 
 def print_and_reset_max_gpu_memory() -> None:
-    max_gpu_mem_alloc = int(torch.cuda.max_memory_allocated() // 1e6)
-    print(f"Max GPU Memory Allocated: {max_gpu_mem_alloc} MB")
-    torch.cuda.reset_peak_memory_stats()
-    torch.cuda.empty_cache()
+    if torch.cuda.is_available():
+        max_gpu_mem_alloc = int(torch.cuda.max_memory_allocated() // 1e6)
+        print(f"Max GPU Memory Allocated: {max_gpu_mem_alloc} MB")
+        torch.cuda.reset_peak_memory_stats()
+        torch.cuda.empty_cache()
 
 
 def cosine_similarity_scaled(list1: np.ndarray, list2: np.ndarray) -> float:
