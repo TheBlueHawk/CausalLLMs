@@ -9,7 +9,7 @@ data_dir=data/tmp/script_data
 output_dir=out/pile_counts
 full_sentences="${1:-true}"
 
-for idx in $(seq -w 00 01); do
+for idx in $(seq -w 00 29); do
   filename_zip="${idx}.jsonl.zst"
   url="the-eye.eu/public/AI/pile/train/${filename_zip}"
   #filename_zip="test.jsonl.zst"
@@ -17,12 +17,12 @@ for idx in $(seq -w 00 01); do
   filename="${idx}.jsonl"
 
   # Remove old data.
-  #rm -rf $data_dir
+  rm -rf $data_dir
 
   # Download new data.
-  # mkdir -p $data_dir
+  mkdir -p $data_dir
   pushd $data_dir
-  #wget "$url"
+  wget "$url"
 
   # The first and last lines are corrupted in most files,
   # since we are only doing a partial extraction. So we drop the first and last lines.
