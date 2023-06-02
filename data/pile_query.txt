@@ -1,12 +1,189 @@
-The cat jumped over the fence and ran away.
-In the distance, the sound of church bells could be heard.
-She opened the box and was surprised by what she found inside.
-The sun was setting over the horizon, casting a warm glow over everything.
-They laughed and joked around the campfire, roasting marshmallows.
-The old man sat on the bench, watching the world go by.
-The storm clouds gathered on the horizon, promising a downpour.
-The train rattled down the tracks, shaking the ground beneath their feet.
-The aroma of freshly baked bread filled the air, making their mouths water.
-The orchestra played a beautiful melody, filling the concert hall with music.
-possible to display
-hospital
+husband
+medication
+the man in the room
+appearance
+drug taken
+education level
+talent
+encouragement level
+manager
+the captain
+season
+the camper
+gender
+Alice waking up
+tanning salon treatment
+respiratory issues
+personality
+parents' intelligence
+smoking
+rixq
+kwox
+xevo
+yomx
+jyka
+yupt
+zuph
+pexu
+obesity
+eating citrus
+my decision
+supply
+treatment
+hospital costs
+vaccination
+maternal smoking status
+gene
+vaccination status
+water quality
+alarm set by husband
+taking medication
+blowing out the candle
+attractive appearance
+taking of all assigned drugs
+college degree or higher
+encouragement
+manager signing the termination letter
+the captain's order to execute the prisoner
+rainy season
+the camper lighting a match
+male gender
+waking up late
+kindness
+intelligent parents
+citrus intake
+taking the elevator
+increased supply
+receives treatment
+high hospital bill
+getting the vaccine
+smoking mother
+smoking gene
+clean water
+alarm clock
+heart condition
+room
+cholesterol level
+salary
+effort
+exam score
+employee
+prisoner
+ground
+the forest
+admission status
+Alice arriving to school
+skin
+broken bones
+child's intelligence
+college admission
+xevu
+kwoz
+gyzp
+lirg
+muvq
+uvzi
+rukz
+glimx
+lifespan
+scurvy
+penguin survival
+price
+recovery
+disease
+infant mortality
+lung cancer
+infant's birth weight
+smallpox survival
+cholera
+ringing alarm
+healthy heart
+dark room
+low cholesterol
+high salary
+being hard-working
+high exam score
+employee being fired
+the prisoner's death
+wet ground
+the forest on fire
+admission acceptance
+arriving to school on time
+tanned skin
+intelligent child
+long lifespan
+penguin death
+increased price
+recovering from the disease
+high infant mortality
+normal infant birth weight
+cholera contraction
+ATE
+Average treatment effect
+ACE
+average causal effect
+ATT
+Average Treatment Effect on the Treated
+Effect of the Treatment on the Treated
+ETT
+NDE
+Natural direct effect
+NIE
+Natural indirect effect
+Correlation
+Marginal Distribution
+marginal
+Expaining Away Effect
+exp_away
+Backdoor Adjustment Set
+backadj
+Collider Bias
+collider_bias
+Counterfactual (deterministic)
+det-counterfactua
+ATE
+Average treatment effect
+ACE
+average causal effect
+ATT
+Average Treatment Effect on the Treated
+Effect of the Treatment on the Treated
+ETT
+NDE
+Natural direct effect
+NIE
+Natural indirect effect
+Correlation
+Marginal Distribution
+marginal
+Expaining Away Effect
+exp_away
+Backdoor Adjustment Set
+backadj
+Collider Bias
+collider_bias
+Counterfactual (deterministic)
+det-counterfactua
+ATE
+Average treatment effect
+ACE
+average causal effect
+ATT
+Average Treatment Effect on the Treated
+Effect of the Treatment on the Treated
+ETT
+NDE
+Natural direct effect
+NIE
+Natural indirect effect
+Correlation
+Marginal Distribution
+marginal
+Expaining Away Effect
+exp_away
+Backdoor Adjustment Set
+backadj
+Collider Bias
+collider_bias
+Counterfactual (deterministic)
+det-counterfactua
