@@ -11,7 +11,7 @@ the captain
 season
 the camper
 gender
-Alice waking up
+alice waking up
 tanning salon treatment
 respiratory issues
 personality
@@ -72,7 +72,7 @@ prisoner
 ground
 the forest
 admission status
-Alice arriving to school
+alice arriving to school
 skin
 broken bones
 child's intelligence
@@ -118,72 +118,26 @@ recovering from the disease
 high infant mortality
 normal infant birth weight
 cholera contraction
-ATE
-Average treatment effect
-ACE
+ate
+average treatment effect
+ace
 average causal effect
-ATT
-Average Treatment Effect on the Treated
-Effect of the Treatment on the Treated
-ETT
-NDE
-Natural direct effect
-NIE
-Natural indirect effect
-Correlation
-Marginal Distribution
+att
+average treatment effect on the treated
+effect of the treatment on the treated
+ett
+nde
+natural direct effect
+nie
+natural indirect effect
+correlation
+marginal distribution
 marginal
-Expaining Away Effect
+expaining away effect
 exp_away
-Backdoor Adjustment Set
+backdoor adjustment set
 backadj
-Collider Bias
+collider bias
 collider_bias
-Counterfactual (deterministic)
-det-counterfactua
-ATE
-Average treatment effect
-ACE
-average causal effect
-ATT
-Average Treatment Effect on the Treated
-Effect of the Treatment on the Treated
-ETT
-NDE
-Natural direct effect
-NIE
-Natural indirect effect
-Correlation
-Marginal Distribution
-marginal
-Expaining Away Effect
-exp_away
-Backdoor Adjustment Set
-backadj
-Collider Bias
-collider_bias
-Counterfactual (deterministic)
-det-counterfactua
-ATE
-Average treatment effect
-ACE
-average causal effect
-ATT
-Average Treatment Effect on the Treated
-Effect of the Treatment on the Treated
-ETT
-NDE
-Natural direct effect
-NIE
-Natural indirect effect
-Correlation
-Marginal Distribution
-marginal
-Expaining Away Effect
-exp_away
-Backdoor Adjustment Set
-backadj
-Collider Bias
-collider_bias
-Counterfactual (deterministic)
+counterfactual (deterministic)
 det-counterfactua
